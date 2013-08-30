@@ -1,6 +1,6 @@
 # toolbin #
 
-This _toolbin_ is a collection of pre-built Linux x86_64 binaries. They are presented here for easy access from the field.
+_toolbin_ is a collection of my Linux pentester tools that are pre-built for easy access from the field.
 
 **What tools are in the toolbin?**
 
