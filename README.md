@@ -10,11 +10,15 @@ This _toolbin_ is a collection of pre-built Linux x86_64 binaries. They are pres
 
 ## Installation ##
 
-Grab the binary you need directly:
+You can grab the binary you need directly. Note the "raw" url below. 
 
+	wget https://github.com/emptymonkey/toolbin/raw/master/shelljack
+	chmod u+x shelljack
 
-Or pull down the entire toolbin with git:
+You can also pull down the entire toolbin with git.
 
+	git clone https://github.com/emptymonkey/toolbin.git
+	cd toolbin
 
 ## A Quick Note on Ethics ##
 
