@@ -6,6 +6,7 @@ _toolbin_ is a collection of my Linux pentester tools that are pre-built (x86_64
 
 * [revsh](https://github.com/emptymonkey/revsh)
 * [shelljack](https://github.com/emptymonkey/shelljack)
+* [sigsleeper](https://github.com/emptymonkey/sigsleeper)
 * [pretend](https://github.com/emptymonkey/pretend)
 
 ## Installation ##
