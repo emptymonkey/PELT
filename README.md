@@ -4,22 +4,18 @@ _toolbin_ is a collection of my Linux pentester tools that are pre-built (x86_64
 
 **What tools are in the toolbin?**
 
-* [revsh](https://github.com/emptymonkey/revsh)
-* [shelljack](https://github.com/emptymonkey/shelljack)
-* [sigsleeper](https://github.com/emptymonkey/sigsleeper)
-* [pretend](https://github.com/emptymonkey/pretend)
+* [shelljack](https://github.com/emptymonkey/toolbin/raw/master/shelljack)
+* [sigsleeper](https://github.com/emptymonkey/toolbin/raw/master/sigsleeper)
+* [pretend](https://github.com/emptymonkey/toolbin/raw/master/pretend)
 
-## Installation ##
+The revsh tool is available in several Arch/OS combos:
+* [revsh-x86_64-Linux](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-x86_64-Linux)
+* [revsh-i686-Linux](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-i686-Linux)
 
-You can grab the binary you need directly. Note the "raw" url below. 
+In addition, the keys directory that these binaries were built with are available as well:
+* [keys.tar](https://github.com/emptymonkey/toolbin/raw/master/revsh/keys.tar) 
 
-	wget https://github.com/emptymonkey/toolbin/raw/master/shelljack
-	chmod u+x shelljack
-
-You can also pull down the entire toolbin with git.
-
-	git clone https://github.com/emptymonkey/toolbin.git
-	cd toolbin
+https://github.com/emptymonkey/toolbin/raw/master/revsh/keys.tar
 
 ## A Quick Note on Ethics ##
 
