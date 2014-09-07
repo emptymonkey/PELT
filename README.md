@@ -12,7 +12,7 @@ The revsh tool is available in several Arch/OS combos:
 * [revsh-x86_64-Linux](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-x86_64-Linux)
 * [revsh-i686-Linux](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-i686-Linux)
 
-In addition, the keys directory that these binaries were built with are available as well:
+In addition, the keys directory that is associated with these revsh builds is also available:
 * [keys.tar](https://github.com/emptymonkey/toolbin/raw/master/revsh/keys.tar) 
 
 ## A Quick Note on Ethics ##
