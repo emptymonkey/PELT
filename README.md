@@ -5,12 +5,14 @@ _toolbin_ is a collection of my Linux pentester tools that are pre-built (x86_64
 **What tools are in the toolbin?**
 
 * [shelljack](https://github.com/emptymonkey/toolbin/raw/master/shelljack)
+* [mimic](https://github.com/emptymonkey/toolbin/raw/master/mimic)
 * [sigsleeper](https://github.com/emptymonkey/toolbin/raw/master/sigsleeper)
 * [pretend](https://github.com/emptymonkey/toolbin/raw/master/pretend)
 
 The revsh tool is available in several Arch/OS combos:
 * [revsh-x86_64-Linux](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-x86_64-Linux)
 * [revsh-i686-Linux](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-i686-Linux)
+* [revsh-amd64-FreeBSD](https://github.com/emptymonkey/toolbin/raw/master/revsh/revsh-amd64-FreeBSD)
 
 In addition, the keys directory that is associated with these revsh builds is also available:
 * [keys.tar](https://github.com/emptymonkey/toolbin/raw/master/revsh/keys.tar) 
