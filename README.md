@@ -89,7 +89,7 @@ Note: _shelljack_ uses ptrace() to attach to processes. Because Ubuntu is patche
 
 _sigsleeper_ injects malicious code into a process that can be triggered by sending that process a signal. This type of attack is best describes as a "malicious signal handler injection with ptrace" attack. Because the injected code will sit quietly until it receives it's signal, at which point it will then launch its payload, I refer to this as "sleeper code". _sigsleeper_ does **not** require root privileges (except on Ubuntu systems).
 
-Project page: [https://github.com/emptymonkey/shelljack](https://github.com/emptymonkey/shelljack)
+Project page: [https://github.com/emptymonkey/sigsleeper](https://github.com/emptymonkey/sigsleeper)
 
 Pre-built binaries: [x86_64-Linux](https://github.com/emptymonkey/PELT/raw/master/sigsleeper)
 
