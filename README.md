@@ -65,7 +65,7 @@ Example:
 
 	empty@monkey:~$ ./set_target_pid 1
 
-Note: The target PID is only a target. _set_target_pid_ will try to get as close as possible, but that PID may simply not be available. The PIDs smaller than 300 appear to be reserved for kernel threads. If you request a PID of '1', then look for the result around '300'. Finally, after you set the PIDs being issued to your target and you have launched your payload, don't forget to reset the PIDs again to where they were before.
+Note: The target PID is only a target. _set_target_pid_ will try to get as close as possible, but that PID may simply not be available. The PIDs smaller than 300 appear to be reserved for kernel threads. If you request a PID of '1', then look for the result around '300'. Finally, after you set the PIDs and launched your payload, don't forget to reset the PIDs again to where they were before.
 
 ***
 ### _shelljack_ ###
