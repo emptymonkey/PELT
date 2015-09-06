@@ -102,6 +102,14 @@ Example:
 Note: _sigsleeper_ uses ptrace() to attach to processes. Because Ubuntu is patched specifically against this type of attack, _sigsleeper_ won't work on Ubuntu systems unless it is run as root.
 
 ***
+### _sudo_mitm.sh ###
+
+_sudo_mitm.sh_ is a very humble shell script that takes advantage of the SUDO_ASKPASS functionality to quickly harvest a target users password. This requires the ability to write to the target user's home directory as a prerequisite. This is useful for gathering the admin credentials quickly on an already compromised host. 
+
+Project page: [https://github.com/emptymonkey/sudo_mitm](https://github.com/emptymonkey/sudo_mitm)
+
+
+***
 ### _pretend_ ###
 
 _pretend_ is a very simple program that changes your UID / GIDs. _pretend_ **does** require root privileges. This program is useful for programmatically changing your UID on the fly without requiring that the UID maps to a valid account on the host. There are a class of attacks for which this tool is very nice to have available.
