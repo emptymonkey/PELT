@@ -13,22 +13,23 @@ These tools are each projects of mine with their own Github pages. Please refer 
 _revsh_ is a reverse shell. It was designed to meet the needs of pentesters facing long engagements. The features include:
 
  * Full terminal support.
- * Unicode support.
- * Circumvention of the login record. (utmp / wtmp)
- * rc file support for launching recurring / cutomized commands upon login.
- * OpenSSL encryption with key based authentication baked into the binary.
- * Anonymous Diffie-Hellman encryption upon request.
- * Ephemeral Diffie-Hellman encryption as default.
- * Cert pinning for protection against sinkholes and mitm counter-intrusion.
+ * [UTF-8](http://en.wikipedia.org/wiki/UTF-8) support.
+ * Circumvents [utmp / wtmp](http://en.wikipedia.org/wiki/Utmp). (No login recorded.)
+ * Processes [rc file](http://en.wikipedia.org/wiki/Run_commands) commands upon login for easy scripting.
+ * [OpenSSL](https://www.openssl.org/) encryption with key based authentication baked into the binary.
+ * Anonymous [Diffie-Hellman](http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) encryption upon request.
+ * Ephemeral Diffie-Hellman encryption as default. (Now with more [Perfect Forward Secrecy](http://en.wikipedia.org/wiki/Forward_secrecy)!)
+ * [Cert pinning](http://en.wikipedia.org/wiki/Transport_Layer_Security#Certificate_pinning) for protection against [sinkholes](http://en.wikipedia.org/wiki/DNS_sinkhole) and [mitm](http://en.wikipedia.org/wiki/Man-in-the-middle_attack) counter-intrusion.
  * Connection timeout for remote process self-termination.
  * Randomized retry timers for non-predictable auto-reconnection.
  * Netcat style non-interactive data brokering for file transfer.
+ * Proxy support: point-to-point, SOCKS 4, SOCKS 4a, and SOCKS 5. Proxys are available in both directions for complete flexibility.
+ * TUN / TAP support for forwarding raw IP packets / Ethernet frames. (Reverse VPN.)
+ * Escape sequence commands to kill non-responsive nodes, or print connection statistics.
 
 Project page: [https://github.com/emptymonkey/revsh](https://github.com/emptymonkey/revsh)
 
-Pre-built binaries: [x86_64-Linux](https://github.com/emptymonkey/PELT/raw/master/revsh/revsh-x86_64-Linux), [i686-Linux](https://github.com/emptymonkey/PELT/raw/master/revsh/revsh-i686-Linux), [amd64-FreeBSD](https://github.com/emptymonkey/PELT/raw/master/revsh/revsh-amd64-FreeBSD)
-
-Tarball of the keys / certs used with these binaries: [keys.tar](https://github.com/emptymonkey/PELT/raw/master/revsh/keys.tar) 
+Pre-built binaries: [Linux-x86_64](https://github.com/emptymonkey/PELT/raw/master/revsh/revsh-v1.0.2-Linux-x86_64), [Linux-i686](https://github.com/emptymonkey/PELT/raw/master/revsh/revsh-v1.0.2-Linux-i686), [FreeBSD-amd64](https://github.com/emptymonkey/PELT/raw/master/revsh/revsh-v1.0.2-FreeBSD-amd64)
 
 Example:
 
@@ -36,8 +37,7 @@ Example:
 
 	user@target:~$ ./revsh
 
-Note: The pre-built binaries here use the default keys provided. If you are using this anywhere sensitive, you are strongly encouraged to download the source and build your own copy. This will generate unique keys / certs. As always, your mission is only as secure as your key management process.
-
+Note: The pre-built binaries above are the GENERIC_BUILD versions of revsh, which default to Anonymous Diffie-Hellman encryption.  In order to enable Ephemeral Diffie-Hellman (with Perfect Forward Secrecy) you will need to build your own copy from source and manage your own keys.
 
 ***
 ### _mimic_ ###
